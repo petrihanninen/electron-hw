@@ -1,0 +1,29 @@
+{
+  "name": "electron-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "type": "module",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "electron": "^8.2.3",
+    "electron-packager": "^14.2.1"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build:mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/img/btc.icns --prune=true --out=release-builds",
+    "build": "npm run build:mac"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petrihanninen/electron-hw.git"
+  },
+  "author": "Petri Hänninen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petrihanninen/electron-hw/issues"
+  },
+  "homepage": "https://github.com/petrihanninen/electron-hw#readme"
+}
